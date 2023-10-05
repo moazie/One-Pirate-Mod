@@ -11,7 +11,7 @@ import net.moaz.onepirate.OnePirate;
 
 public class ModItems {
 
-    public static final Item GumFruit = registerItem("gumgumfruit", new Item(new FabricItemSettings()));
+    public static final Item GumFruit = registerItem("gumgumfruit", new Item(new FabricItemSettings().food(ModFoodComponents.GUM_FRUIT)));
 
     private static void  ItemsToTabGroup(FabricItemGroupEntries entries) {
         entries.add(GumFruit);

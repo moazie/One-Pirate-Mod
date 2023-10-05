@@ -23,5 +23,7 @@ public class OnePirate implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+
 	}
+
 }

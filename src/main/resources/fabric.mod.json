@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "onepirate",
+	"version": "${version}",
+	"name": "One Pirate",
+	"description": "Let us become King of the Pirates! 王様の海賊になるましょう！",
+	"authors": [
+		"Moaz"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/onepirate/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.moaz.onepirate.OnePirate"
+		],
+		"client": [
+			"net.moaz.onepirate.OnePirateClient"
+		],
+		"fabric-datagen": [
+			"net.moaz.onepirate.OnePirateDataGenerator"
+		]
+	},
+	"mixins": [
+		"onepirate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

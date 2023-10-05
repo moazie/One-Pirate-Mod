@@ -12,7 +12,7 @@ import net.moaz.onepirate.OnePirate;
 public class ModItemGroups {
     public static final ItemGroup ONE_PIRATE = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OnePirate.MOD_ID, "onepirate"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.onepirate")).icon(() -> new ItemStack(ModItems.GumFruit)).entries((displayContext, entries) -> {
+            FabricItemGroup.builder().displayName(Text.translatable("One Pirate")).icon(() -> new ItemStack(ModItems.GumFruit)).entries((displayContext, entries) -> {
                         entries.add(ModItems.GumFruit);
                     }).build());
 

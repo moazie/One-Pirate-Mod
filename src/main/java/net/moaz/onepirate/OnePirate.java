@@ -2,6 +2,7 @@ package net.moaz.onepirate;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.moaz.onepirate.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,5 +20,6 @@ public class OnePirate implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }

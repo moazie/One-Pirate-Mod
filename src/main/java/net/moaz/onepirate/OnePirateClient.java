@@ -12,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.moaz.onepirate.item.ModFoodComponents;
 import net.moaz.onepirate.item.ModItems;
+import software.bernie.geckolib.GeckoLib;
 
 import java.util.ArrayList;
 
@@ -25,6 +26,8 @@ public class OnePirateClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
+        GeckoLib.initialize();
 
         for (Item item : foodItems) {
             FabricModelPredicateProviderRegistry.register(item, new Identifier("eat"), (itemStack, clientWorld, livingEntity, i) -> {

@@ -26,6 +26,12 @@ repositories {
 		name = 'ModMenu'
 		url 'https://maven.terraformersmc.com/releases/com/terraformersmc/modmenu/'
 	}
+
+	maven {
+			name ="KosmX's maven"
+			url 'https://maven.kosmx.dev/'
+	}
+
 }
 
 loom {
@@ -59,7 +65,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.2'
-
+	include modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:1.0.2-rc1+1.20")
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
